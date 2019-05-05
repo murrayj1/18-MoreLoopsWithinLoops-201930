@@ -443,6 +443,7 @@ def first_is_elsewhere_too(seq_seq):
                     if seq_seq[k][l] == first_sub[j]:
                         return True
     return False
+#
 
 
 # -----------------------------------------------------------------------------

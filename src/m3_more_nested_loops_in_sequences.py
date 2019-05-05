@@ -81,12 +81,21 @@ def largest_number(seq_seq):
     # -------------------------------------------------------------------------
     # TODO: 3. Implement and test this function.
     #   Note that you should write its TEST function first (above).
-    # -------------------------------------------------------------------------
+    # ------------------------------------------------------------------------
+    while True:
+        for k in range(len(seq_seq)):
+            for l in range(len(seq_seq[k])):
+                if len(seq_seq[k][l]) != 0:
+                    largest = seq_seq[k][l]
+                    break
+            break
+        break
+
+
     for i in range(len(seq_seq)):
-        for j in range(len(seq_seq(i))):
-            largest = seq_seq(0)
-            if seq_seq(j) > largest:
-                largest = seq_seq(i)
+        for j in range(len(seq_seq[i])):
+            if seq_seq[i][j] > largest:
+                largest = seq_seq[i][j]
     return largest
 
 
